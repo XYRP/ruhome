@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="vip.wicp.ruhome.system.mapper.ArticleMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="vip.wicp.ruhome.system.entity.Article">
+        <id column="id" property="id" />
+        <result column="title" property="title" />
+        <result column="author" property="author" />
+        <result column="content" property="content" />
+        <result column="showcase" property="showcase" />
+        <result column="browse_num" property="browseNum" />
+        <result column="praise_num" property="praiseNum" />
+        <result column="create_time" property="createTime" />
+        <result column="update_time" property="updateTime" />
+        <result column="is_deleted" property="isDeleted" />
+        <result column="comment_no" property="commentNo" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, title, author, content, showcase, browse_num, praise_num, create_time, update_time, is_deleted, comment_no
+    </sql>
+
+</mapper>
